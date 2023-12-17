@@ -59,7 +59,7 @@ def test(message):
             for i in range(len(rows)):
                 data = str(i + 1) + ') ' + str(rows[i][1]) + ' руб' + '\n' + \
                        str(rows[i][2]).replace('Объявление', '') + 'ССЫЛКА: ' + str(rows[i][3])
-                bot.se  nd_message(message.chat.id, data)
+                bot.send_message(message.chat.id, data)
 
 
 # @bot.message_handler(commands=['print_b']) def printing(message): rows = cost_sorting(1000000, 2000000) for i in
