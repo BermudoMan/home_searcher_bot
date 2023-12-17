@@ -10,7 +10,7 @@ to_db_title = str
 to_db_cost = str
 to_db_url = str
 def run_parser():
-    driver = webdriver.Edge("Z:\\!GIT\\home_searcher_simple_bot\\msedgedriver.exe")
+    driver = webdriver.Edge("Z:\\!GIT\\home_searcher_bot\\msedgedriver.exe")
 
     driver.minimize_window()
     driver.get(URL)
