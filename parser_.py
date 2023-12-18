@@ -10,10 +10,18 @@ to_db_title = str
 to_db_cost = str
 to_db_url = str
 def run_parser():
+    for i in range(1, 11, 1):
+        page_ref = 'p=' + str(i) + '&s=104'
+#        URL = URL.replace('s=104', page_ref)
+        pars_elements(page_ref)
+    return print('COMPLETE')
+def pars_elements(page_ref):
     driver = webdriver.Edge("Z:\\!GIT\\home_searcher_bot\\msedgedriver.exe")
 
     driver.minimize_window()
+    URL.replace('s=104', page_ref)
     driver.get(URL)
+    print(URL)
 
     # ToDo переключение страницы и выполнение тех же инструкций
 
@@ -32,7 +40,7 @@ def run_parser():
         to_db_cost = str(cost.get_attribute('content'))
         to_db_url = str(title.get_attribute('href'))
         merge = to_db_cost + ",'" + to_db_title + "','" + to_db_url + "'"
-        print(merge)
+#        print(merge)
         add_row(merge)
 
     return driver.close()

@@ -1,7 +1,6 @@
 URL = 'https://www.avito.ru/ivanovo/kvartiry/prodam-ASgBAgICAUSSA8YQ?s=104'
 TOKEN = ''
-DRIVER_PATH = 'Z:\\webdrivers\\chromedriver-win64\\chromedriver.exe'
-BROWSER = 'Z:\\webdrivers\\chrome-win64'
+
 
 # db data
 database = 'HSearcher(bot)'
